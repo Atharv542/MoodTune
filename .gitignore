@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+*.egg-info/
+
+# Flask + Cache
+.cache/
+instance/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Node / React
+node_modules/
+dist/
+build/
+npm-debug.log
+yarn-error.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+
+
+# Logs
+*.log
