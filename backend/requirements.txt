@@ -6,4 +6,4 @@ pillow
 spotipy
 matplotlib
 gunicorn
-sqlite3-binary
+
