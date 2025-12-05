@@ -30,12 +30,7 @@ SPOTIFY_CLIENT_SECRET = "a66a684a4b5a4cfc8d73f97636f49d9e"
 # App init
 # ---------------------------
 app = Flask(__name__)
-CORS(app,
-    origins=["https://mood-tune-nine.vercel.app"],
-    methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type"],
-)
-
+CORS(app, origins=["https://mood-tune-nine.vercel.app/"])
 
 
 # ---------------------------
@@ -274,9 +269,7 @@ def plot_daily():
         app.logger.exception("Heatmap generation error")
         return jsonify({"error": str(e)}), 500
 
-@app.route("/ping", methods=["GET"])
-def ping():
-    return "pong"
+
 # ---------------------------
 # Start
 # ---------------------------
