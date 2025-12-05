@@ -30,10 +30,7 @@ SPOTIFY_CLIENT_SECRET = "a66a684a4b5a4cfc8d73f97636f49d9e"
 # App init
 # ---------------------------
 app = Flask(__name__)
-CORS(app,
-     origins=["https://mood-tune-nine.vercel.app"],
-     methods=["GET", "POST"],
-     supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
 
 # ---------------------------
