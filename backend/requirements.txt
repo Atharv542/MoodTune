@@ -1,0 +1,9 @@
+Flask
+flask-cors
+tensorflow
+numpy
+pillow
+spotipy
+matplotlib
+gunicorn
+sqlite3-binary
