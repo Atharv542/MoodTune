@@ -10,7 +10,7 @@ export default function Dashboard() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("https://moodtune-backend-production.up.railway.app/dashboard-data");
+      const res = await fetch("https://huggingface.co/spaces/Atharv542/moodtune-backend/dashboard-data");
       const data = await res.json();
       if (data.error) {
         console.error(data.error);
