@@ -32,7 +32,7 @@ export default function Emotion() {
   const sendToBackend = async (base64Image) => {
     setLoading(true);
     try {
-      const res = await fetch("https://huggingface.co/spaces/Atharv542/moodtune-backend/predict", {
+      const res = await fetch("https://atharv542-moodtune-backend.hf.space/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ img: base64Image }),
